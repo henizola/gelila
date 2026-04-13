@@ -445,6 +445,12 @@
 	<link rel="stylesheet" id="widget-google_maps-css" href="css/widget-google_maps.min.css" media="all">
 	<link rel="stylesheet" id="swiper-css" href="css/swiper.min.css" media="all">
 	<link rel="stylesheet" id="e-swiper-css" href="css/e-swiper.min.css" media="all">
+	<link rel="stylesheet" id="owl-carousel-css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		media="all">
+	<link rel="stylesheet" id="owl-theme-default-css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		media="all">
 	<link rel="stylesheet" id="fluent-form-styles-css" href="css/fluent-forms-public.css" media="all">
 	<link rel="stylesheet" id="fluentform-public-default-css" href="css/fluentform-public-default.css" media="all">
 	<link rel="stylesheet" id="elementor-post-9-css" href="css/post-9.css" media="all">
@@ -1600,147 +1606,128 @@
 					isolation: isolate;
 				}
 
-				.henok-slideshow {
+				.henok-owl-carousel {
 					position: absolute;
 					inset: 0;
-					overflow: hidden;
+					width: 100%;
+					height: 100%;
 				}
 
-				.henok-slideshow__slide {
-					position: absolute;
-					inset: 0;
-					background-position: center center;
-					background-repeat: no-repeat;
-					background-size: cover;
-					opacity: 0;
-					transform: scale(1.04);
-					animation: henok-slideshow-fade 90s infinite;
+				.henok-owl-carousel .henok-owl-item {
+					position: relative;
+					height: 100%;
+					min-height: 622px;
 				}
 
-				.henok-slideshow__slide::after {
+				.henok-owl-carousel .henok-owl-item img {
+					width: 100%;
+					height: 100%;
+					display: block;
+					object-fit: cover;
+				}
+
+				.henok-owl-carousel .henok-owl-item::after {
 					content: "";
 					position: absolute;
 					inset: 0;
 					background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.18) 100%);
+					pointer-events: none;
 				}
 
-				.henok-slideshow__slide--1 {
-					background-image: url("images/Henok-Gelila00000.jpeg");
-					animation-delay: 0s;
+				.henok-owl-carousel .owl-stage-outer,
+				.henok-owl-carousel .owl-stage,
+				.henok-owl-carousel .owl-item {
+					height: 100%;
 				}
 
-				.henok-slideshow__slide--2 {
-					background-image: url("images/Henok-Gelila00001.jpeg");
-					animation-delay: 6s;
+				.henok-owl-carousel .owl-nav {
+					margin-top: 0;
 				}
 
-				.henok-slideshow__slide--3 {
-					background-image: url("images/Henok-Gelila00002.jpeg");
-					animation-delay: 12s;
+				.henok-owl-carousel .owl-nav button.owl-prev,
+				.henok-owl-carousel .owl-nav button.owl-next {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 52px;
+					height: 52px;
+					border-radius: 50%;
+					border: 1px solid rgba(255, 255, 255, 0.75);
+					background: rgba(0, 0, 0, 0.35);
+					color: #ffffff;
+					font-size: 34px;
+					line-height: 1;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					transition: background-color 0.2s ease, border-color 0.2s ease;
+					z-index: 3;
 				}
 
-				.henok-slideshow__slide--4 {
-					background-image: url("images/Henok-Gelila00003.jpeg");
-					animation-delay: 18s;
+				.henok-owl-carousel .owl-nav button.owl-prev {
+					left: 18px;
 				}
 
-				.henok-slideshow__slide--5 {
-					background-image: url("images/Henok-Gelila00004.jpeg");
-					animation-delay: 24s;
+				.henok-owl-carousel .owl-nav button.owl-next {
+					right: 18px;
 				}
 
-				.henok-slideshow__slide--6 {
-					background-image: url("images/Henok-Gelila00005.jpeg");
-					animation-delay: 30s;
+				.henok-owl-carousel .owl-nav button.owl-prev:hover,
+				.henok-owl-carousel .owl-nav button.owl-next:hover {
+					background: rgba(0, 0, 0, 0.55);
+					border-color: rgba(255, 255, 255, 1);
 				}
 
-				.henok-slideshow__slide--7 {
-					background-image: url("images/Henok-Gelila00006.jpeg");
-					animation-delay: 36s;
+				.henok-owl-carousel .owl-nav button span {
+					display: block;
+					margin-top: -2px;
 				}
 
-				.henok-slideshow__slide--8 {
-					background-image: url("images/Henok-Gelila00007.jpeg");
-					animation-delay: 42s;
+				.henok-owl-carousel .owl-dots {
+					display: none;
 				}
 
-				.henok-slideshow__slide--9 {
-					background-image: url("images/Henok-Gelila00008.jpeg");
-					animation-delay: 48s;
+				.henok-owl-carousel:not(.owl-loaded) .henok-owl-item:not(:first-child) {
+					display: none;
 				}
 
-				.henok-slideshow__slide--10 {
-					background-image: url("images/Henok-Gelila00009.jpeg");
-					animation-delay: 54s;
-				}
-
-				.henok-slideshow__slide--11 {
-					background-image: url("images/Henok-Gelila00010.jpeg");
-					animation-delay: 60s;
-				}
-
-				.henok-slideshow__slide--12 {
-					background-image: url("images/Henok-Gelila00011.jpeg");
-					animation-delay: 66s;
-				}
-
-				.henok-slideshow__slide--13 {
-					background-image: url("images/Henok-Gelila00012.jpeg");
-					animation-delay: 72s;
-				}
-
-				.henok-slideshow__slide--14 {
-					background-image: url("images/Henok-Gelila00013.jpeg");
-					animation-delay: 78s;
-				}
-
-				.henok-slideshow__slide--15 {
-					background-image: url("images/Henok-Gelila00014.jpeg");
-					animation-delay: 84s;
-				}
-
-				@keyframes henok-slideshow-fade {
-					0% {
-						opacity: 0;
-						transform: scale(1.08);
+				@media (max-width: 767px) {
+					.henok-owl-carousel .henok-owl-item {
+						min-height: 420px;
 					}
 
-					1% {
-						opacity: 1;
+					.henok-owl-carousel .owl-nav button.owl-prev,
+					.henok-owl-carousel .owl-nav button.owl-next {
+						width: 42px;
+						height: 42px;
+						font-size: 28px;
 					}
 
-					5% {
-						opacity: 1;
-						transform: scale(1.02);
+					.henok-owl-carousel .owl-nav button.owl-prev {
+						left: 10px;
 					}
 
-					6.667% {
-						opacity: 0;
-						transform: scale(1);
-					}
-
-					100% {
-						opacity: 0;
-						transform: scale(1);
+					.henok-owl-carousel .owl-nav button.owl-next {
+						right: 10px;
 					}
 				}
 			</style>
-			<div class="henok-slideshow" aria-label="Wedding photo slideshow">
-				<div class="henok-slideshow__slide henok-slideshow__slide--1"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--2"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--3"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--4"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--5"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--6"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--7"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--8"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--9"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--10"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--11"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--12"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--13"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--14"></div>
-				<div class="henok-slideshow__slide henok-slideshow__slide--15"></div>
+			<div class="henok-owl-carousel owl-carousel" aria-label="Wedding photo carousel">
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00000.jpeg" alt="Henok and Gelila wedding photo 1"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00001.jpeg" alt="Henok and Gelila wedding photo 2"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00002.jpeg" alt="Henok and Gelila wedding photo 3"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00003.jpeg" alt="Henok and Gelila wedding photo 4"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00004.jpeg" alt="Henok and Gelila wedding photo 5"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00005.jpeg" alt="Henok and Gelila wedding photo 6"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00006.jpeg" alt="Henok and Gelila wedding photo 7"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00007.jpeg" alt="Henok and Gelila wedding photo 8"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00008.jpeg" alt="Henok and Gelila wedding photo 9"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00009.jpeg" alt="Henok and Gelila wedding photo 10"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00010.jpeg" alt="Henok and Gelila wedding photo 11"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00011.jpeg" alt="Henok and Gelila wedding photo 12"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00012.jpeg" alt="Henok and Gelila wedding photo 13"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00013.jpeg" alt="Henok and Gelila wedding photo 14"></div>
+				<div class="henok-owl-item"><img src="images/Henok-Gelila00014.jpeg" alt="Henok and Gelila wedding photo 15"></div>
 			</div>
 		</div>
 		<!-- <div class="elementor-element elementor-element-d51d5e5 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent"
@@ -1986,6 +1973,31 @@
 	</script>
 	<script src="js/frontend.min.js" id="elementor-frontend-js"></script>
 	<script src="js/swiper.min.js" id="swiper-js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		id="owl-carousel-js"></script>
+	<script id="henok-owl-carousel-init-js">
+		jQuery(function ($) {
+			var $carousel = $(".henok-owl-carousel");
+			if (!$carousel.length || typeof $carousel.owlCarousel !== "function") {
+				return;
+			}
+
+			$carousel.owlCarousel({
+				items: 1,
+				loop: true,
+				nav: true,
+				dots: false,
+				autoplay: true,
+				autoplayTimeout: 6000,
+				autoplayHoverPause: true,
+				smartSpeed: 900,
+				navText: [
+					"<span aria-hidden='true'>&lsaquo;</span>",
+					"<span aria-hidden='true'>&rsaquo;</span>"
+				]
+			});
+		});
+	</script>
 	<script src="js/particles.js" id="wpr-particles-js"></script>
 	<script src="js/jarallax.min.js" id="wpr-jarallax-js"></script>
 	<script src="js/parallax.min.js" id="wpr-parallax-hover-js"></script>
