@@ -1608,12 +1608,14 @@
 		</div>
 		<div style="height: 80vh;" class="elementor-element elementor-element-883186f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent"
 			data-id="883186f" data-element_type="container" data-e-type="container">
-			<style>
-				.elementor-9 .elementor-element.elementor-element-883186f {
-					position: relative;
-					overflow: hidden;
-					isolation: isolate;
-				}
+				<style>
+					.elementor-9 .elementor-element.elementor-element-883186f {
+						position: relative;
+						overflow: hidden;
+						isolation: isolate;
+						height: 80vh;
+						min-height: 80vh;
+					}
 
 				.henok-owl-carousel {
 					position: absolute;
@@ -1622,18 +1624,19 @@
 					height: 100%;
 				}
 
-				.henok-owl-carousel .henok-owl-item {
-					position: relative;
-					height: 100%;
-					min-height: 622px;
-				}
+					.henok-owl-carousel .henok-owl-item {
+						position: relative;
+						height: 100%;
+						min-height: 80vh;
+					}
 
-				.henok-owl-carousel .henok-owl-item img {
-					width: 100%;
-					height: 100%;
-					display: block;
-					object-fit: cover;
-				}
+					.henok-owl-carousel .henok-owl-item img {
+						width: 100%;
+						height: 100%;
+						display: block;
+						object-fit: cover;
+						object-position: center center;
+					}
 
 				.henok-owl-carousel .henok-owl-item::after {
 					content: "";
@@ -1700,10 +1703,10 @@
 					display: none;
 				}
 
-				@media (max-width: 767px) {
-					.henok-owl-carousel .henok-owl-item {
-						min-height: 420px;
-					}
+					@media (max-width: 767px) {
+						.henok-owl-carousel .henok-owl-item {
+							min-height: 80vh;
+						}
 
 					.henok-owl-carousel .owl-nav button.owl-prev,
 					.henok-owl-carousel .owl-nav button.owl-next {
@@ -1818,6 +1821,36 @@
 														id="input_radio_b6806514c4ef48a6babeb8a8a234a548"
 														aria-label="አይ" aria-invalid="false" aria-required="true" required>
 													<span>አይ</span></label></div>
+										</div>
+									</div>
+									<div class="ff-el-group  ff_list_inline">
+										<div class="ff-el-input--label ff-el-is-required asterisk-right"><label
+												aria-label="ከየትኛው ቤተሰብ ወገን ነዎት?">ከየትኛው ቤተሰብ ወገን ነዎት?</label></div>
+										<div class="ff-el-input--content">
+											<div class="ff-el-form-check ff-el-form-check-"><label
+													class="ff-el-form-check-label"
+													for="family_side_groom"><input type="radio" name="family_side"
+														data-name="family_side"
+														class="ff-el-form-check-input ff-el-form-check-radio"
+														value="የሙሽራው ወገን" id="family_side_groom"
+														aria-label="የሙሽራው ወገን" aria-invalid="false" aria-required="true" required>
+													<span>የሙሽራው ወገን</span></label></div>
+											<div class="ff-el-form-check ff-el-form-check-"><label
+													class="ff-el-form-check-label"
+													for="family_side_bride"><input type="radio" name="family_side"
+														data-name="family_side"
+														class="ff-el-form-check-input ff-el-form-check-radio"
+														value="የሙሽሪቷ ወገን" id="family_side_bride"
+														aria-label="የሙሽሪቷ ወገን" aria-invalid="false" aria-required="true" required>
+													<span>የሙሽሪቷ ወገን</span></label></div>
+											<div class="ff-el-form-check ff-el-form-check-"><label
+													class="ff-el-form-check-label"
+													for="family_side_both"><input type="radio" name="family_side"
+														data-name="family_side"
+														class="ff-el-form-check-input ff-el-form-check-radio" value="ሁለቱም"
+														id="family_side_both" aria-label="ሁለቱም" aria-invalid="false"
+														aria-required="true" required>
+													<span>ሁለቱም</span></label></div>
 										</div>
 									</div>
 									<div class="ff-el-group">
@@ -2058,15 +2091,17 @@
 
 				var nameField = form.querySelector('[name="user_email"]');
 				var attendingField = form.querySelector('input[name="user_phone"]:checked');
+				var familySideField = form.querySelector('input[name="family_side"]:checked');
 				var messageField = form.querySelector('[name="message"]');
 
 				var nameValue = nameField ? nameField.value.trim() : "";
 				var attendingValue = attendingField ? attendingField.value.trim() : "";
+				var familySideValue = familySideField ? familySideField.value.trim() : "";
 				var messageValue = messageField ? messageField.value.trim() : "";
 
-				if (!nameValue || !attendingValue) {
+				if (!nameValue || !attendingValue || !familySideValue) {
 					if (statusEl) {
-						statusEl.textContent = "Please enter your name and attendance.";
+						statusEl.textContent = "እባክዎ ስምዎን፣ መገኘትዎን እና የቤተሰብ ወገንዎን ይምረጡ።";
 						statusEl.classList.add("error");
 					}
 					return;
@@ -2101,6 +2136,7 @@
 				var combinedMessage = [
 					"Name: " + nameValue,
 					"Will Attend: " + attendingValue,
+					"የቤተሰብ ወገን: " + familySideValue,
 					"",
 					"Message: " + (messageValue || "(no message)")
 				].join("\n");
