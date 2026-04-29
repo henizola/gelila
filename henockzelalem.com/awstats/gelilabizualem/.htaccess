@@ -1,0 +1,5 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.gelilabizualem.henockzelalem.com$ [NC]
+RewriteRule ^(.*)$ http://gelilabizualem.henockzelalem.com/awstats/$1 [R=301,L]

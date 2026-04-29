@@ -1,0 +1,587 @@
+AWSTATS DATA FILE 8.0 (build 20240604)
+# If you remove this file, all statistics for date 202604 will be lost/reset.
+# Last config file used to build this data file was /home/henockqe/domains/henockzelalem.com/awstats/test/.data/awstats.test.henockzelalem.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 30
+POS_GENERAL 2193                
+POS_TIME 2855                
+POS_VISITOR 11344               
+POS_DAY 13597               
+POS_DOMAIN 3470                
+POS_LOGIN 3696                
+POS_ROBOT 3851                
+POS_WORMS 4108                
+POS_EMAILSENDER 4239                
+POS_EMAILRECEIVER 4382                
+POS_SESSION 14012               
+POS_FILESIZE 14471               
+POS_REQUESTTIME 14586               
+POS_SIDER 14180               
+POS_FILETYPES 4517                
+POS_DOWNLOADS 4617                
+POS_OS 4665                
+POS_BROWSER 4828                
+POS_SCREENSIZE 5300                
+POS_UNKNOWNREFERER 5374                
+POS_UNKNOWNREFERERBROWSER 5683                
+POS_ORIGIN 5798                
+POS_SEREFERRALS 5932                
+POS_PAGEREFS 6076                
+POS_SEARCHWORDS 6224                
+POS_KEYWORDS 6376                
+POS_MISC 2519                
+POS_ERRORS 6435                
+POS_CLUSTER 3552                
+POS_SIDER_403 6552                
+POS_SIDER_400 11035               
+POS_SIDER_404 6674                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20260428172200 9 1631 17247384617795
+FirstTime 0
+LastTime 20260428163312
+LastUpdate 20260429012417 9 0 9 0 0
+TotalVisits 59                  
+TotalUnique 58                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 58                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+FlashSupport 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+JavaEnabled 0 0 0
+AddToFavourites 0 9 0
+RealPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 3 4695
+1 5 5 1511 6 8 9572
+2 1 1 790 1 2 2610
+3 0 0 0 2 3 3493
+4 2 2 1402 168 168 259351
+5 0 0 0 2 2 2502
+6 2 2 1580 1 3 2107
+7 2 2 1598 2 19 28840
+8 26 26 15231 12 15 12623
+9 12 12 9267 1 5 4609
+10 9 9 5913 8 14 12190
+11 0 0 0 3 4 4706
+12 0 0 0 5 7 6184
+13 0 0 0 9 10 8551
+14 0 0 0 4 6 6388
+15 5 5 3772 110 111 167183
+16 2 2 1580 11 16 13698
+17 3 3 2370 8 15 11282
+18 1 1 790 5 8 7823
+19 0 0 0 3 3 2992
+20 0 0 0 0 0 0
+21 0 0 0 2 4 4801
+22 1 1 790 1 4 3763
+23 2 2 1580 2 7 5465
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 73 73 48174
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+checker 12 3204 20260426153754 0
+ning 11 9768 20260426182726 0
+scrapy 2 1580 20260427133329 0
+GPTBot/ 2 917 20260423185430 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 2
+Unknown 7 2595 0 0
+php 66 45579 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 8
+macosx15 6 6
+linuxubuntu 7 7
+linux 36 36
+win7 1 1
+ios_iphone 5 5
+macosx 1 1
+win10 8 8
+Unknown 9 9
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 22
+chrome83.0.4103.61 1 1
+safari15.4 1 1
+Unknown 2 2
+chrome116.0.0.0 5 5
+chrome117.0.5938.132 1 1
+mozilla 7 7
+chrome106.0.0.0 1 1
+chrome142.0.0.0 8 8
+chrome117.0.0.0 4 4
+chrome126.0.0.0 3 3
+firefox120.0 15 15
+chrome131.0.0.0 4 4
+chrome147.0.7727.55 1 1
+chrome58.0.3029.110 2 2
+chrome78.0.3904.108 2 2
+chrome79.0.3945.79 1 1
+safari17.4 1 1
+safari14.0.3 1 1
+chrome113.0.0.0 1 1
+safari 3 3
+chrome125.0.0.0 2 2
+firefox134.0 7 7
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20260413081352
+DirectAdmin/1.698 20260413081348
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20260427225929
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+DirectAdmin/1.698 20260413081348
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 62 62
+From1 0 0
+From2 0 0
+From3 0 0
+From4 11 11
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+404 314 480951
+301 61 64125
+403 10 15336
+END_ERRORS
+
+# URL with 403 errors - Hits - Last URL referrer
+BEGIN_SIDER_403 3
+/config/.env 2 -
+/ 6 -
+/.git/config 2 -
+END_SIDER_403
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 216
+/magento/.env 1 -
+/www/.env 1 -
+/_ignition/execute-solution 1 -
+/.env.preprod 1 -
+/sender/.env 1 -
+/.env.local 2 -
+/cron/.env 2 -
+//news/wp-includes/wlwmanifest.xml 1 -
+/dashboard/phpinfo.php 1 -
+/email/.env 1 -
+/.env.swp 1 -
+//wp-includes/wlwmanifest.xml 1 -
+/development/info.php 1 -
+/public/phpinfo.php 1 -
+/laravel/info.php 1 -
+//sito/wp-includes/wlwmanifest.xml 1 -
+//2018/wp-includes/wlwmanifest.xml 1 -
+/_phpinfo.php 1 -
+/notify/.env 1 -
+/uploads/.env 2 -
+/server/phpinfo.php 1 -
+/private/.env 1 -
+/resources/.env 1 -
+/.env.live 1 -
+/express/.env 1 -
+/releases/.env 1 -
+/core/app/.env 2 -
+/mail/.env 1 -
+/laravel/.env 2 -
+/old_phpinfo.php 2 -
+/backend/.env 2 -
+/lib/.env 2 -
+//wordpress/wp-includes/wlwmanifest.xml 1 -
+/old/phpinfo.php 2 -
+/.env.production 2 -
+/tmp/.env 1 -
+/backup/.env 1 -
+/api/v2/.env 1 -
+/psnlink/.env 2 -
+/live/.env 2 -
+/develop/phpinfo.php 1 -
+/php-info.php 2 -
+/cronlab/.env 2 -
+/nest/.env 1 -
+/portal/.env 1 -
+/exapi/.env 1 -
+/symfony/.env 1 -
+/drupal/.env 1 -
+//2019/wp-includes/wlwmanifest.xml 1 -
+/wp/.env 1 -
+//blog/wp-includes/wlwmanifest.xml 1 -
+/site/.env 2 -
+/service/phpinfo.php 1 -
+/backend/info.php 1 -
+/.env~ 1 -
+/crm/info.php 1 -
+/gateway/.env 1 -
+//wp2/wp-includes/wlwmanifest.xml 1 -
+/administrator/.env 2 -
+/hosting/phpinfo.php 1 -
+/.env.test 2 -
+/project/.env 2 -
+/services/info.php 1 -
+//media/wp-includes/wlwmanifest.xml 1 -
+//shop/wp-includes/wlwmanifest.xml 1 -
+/_environment 2 -
+/build/.env 2 -
+/api/v1/.env 1 -
+/develop/info.php 1 -
+/vendor/.env 2 -
+/temp/.env 1 -
+/en/.env 2 -
+/server-info.php 1 -
+/webmail/phpinfo.php 1 -
+/helper/phpinfo.php 1 -
+/debug.php 1 -
+/p.php 1 -
+/service/.env 2 -
+/pinfo.php 2 -
+/smtp/phpinfo.php 1 -
+/current/.env 2 -
+/joomla/.env 1 -
+/phpinfo.php 2 -
+/web/.env 2 -
+/cpanel/phpinfo.php 1 -
+/mailing/.env 1 -
+/graphql/.env 1 -
+/.env.example 1 -
+/pi.php 1 -
+/server/info.php 1 -
+/admin/phpinfo.php 2 -
+/scripts/.env 1 -
+/.env.save 2 -
+/.env.prod 1 -
+/prestashop/.env 1 -
+/backend/phpinfo.php 1 -
+/dashboard/.env 1 -
+/node/.env 2 -
+/backup/info.php 1 -
+/i.php 1 -
+/.env.dev 1 -
+/info.php 2 -
+/mandrill/.env 1 -
+/core/Database/.env 1 -
+/info 1 -
+/campaign/.env 1 -
+/shop/.env 1 -
+/.env.docker 1 -
+/frontend/.env 2 -
+/.well-known/security.txt 1 -
+/.env.backup 2 -
+/client/.env 2 -
+/test/info.php 1 -
+/.env.ci 1 -
+/nuxt/.env 1 -
+/v3/.env 1 -
+/store/.env 1 -
+/dev/.env 2 -
+/transactional/.env 1 -
+/rest/.env 1 -
+/services/phpinfo.php 1 -
+//website/wp-includes/wlwmanifest.xml 1 -
+/test/phpinfo.php 2 -
+/mailgun/.env 1 -
+//test/wp-includes/wlwmanifest.xml 1 -
+/internal/.env 1 -
+/dist/.env 2 -
+/wordpress/.env 1 -
+/public_html/.env 2 -
+/release/.env 1 -
+/v1/.env 2 -
+/storage/.env 2 -
+/mailer/.env 1 -
+/brevo/.env 1 -
+/microservice/.env 1 -
+/bulk/.env 1 -
+/helper/info.php 1 -
+/database/.env 2 -
+/.env.bak 2 -
+/robots.txt 28 -
+/current/info.php 1 -
+/.env.dist 1 -
+/old/info.php 1 -
+/dev/info.php 1 -
+/newsletter/.env 1 -
+/shared/.env 1 -
+/lab/.env 2 -
+/tools/.env 2 -
+/server-status.php 1 -
+/core/.env 2 -
+/notifications/.env 1 -
+/mail/phpinfo.php 1 -
+/assets/.env 2 -
+/api/info.php 1 -
+/core/Datavase/.env 1 -
+/shopify/.env 1 -
+/panel/.env 1 -
+/html/.env 1 -
+/development/phpinfo.php 1 -
+/.env.development 2 -
+/.env.remote 2 -
+/mailjet/.env 1 -
+/test.php 1 -
+/v2/.env 2 -
+/htdocs/.env 1 -
+/sendgrid/.env 1 -
+/src/.env 1 -
+/_profiler/phpinfo 2 -
+/crm/.env 1 -
+/xampp/info.php 1 -
+//site/wp-includes/wlwmanifest.xml 1 -
+/server/.env 2 -
+/.env.staging 2 -
+/smtp/.env 1 -
+/admin/info.php 1 -
+/public/.env 2 -
+/webroot/index.php/_environment 2 -
+/dev/phpinfo.php 2 -
+/ses/.env 1 -
+/saas/.env 2 -
+//wp1/wp-includes/wlwmanifest.xml 1 -
+/cms/.env 1 -
+/app/.env 2 -
+/phpinfo 2 -
+/api/phpinfo.php 1 -
+/xampp/phpinfo.php 1 -
+/old/.env 1 -
+/phpversion.php 2 -
+/crm/phpinfo.php 1 -
+//cms/wp-includes/wlwmanifest.xml 1 -
+/api/.env 2 -
+/next/.env 1 -
+/laravel/phpinfo.php 1 -
+/staging/.env 1 -
+/.env 5 -
+/erp/.env 1 -
+/backup/phpinfo.php 1 -
+/sitemaps/.env 2 -
+/.env.stage 1 -
+/postmark/.env 1 -
+/deploy/.env 1 -
+/.env.uat 1 -
+/service/info.php 1 -
+/apps/.env 2 -
+/.env.old 2 -
+//xmlrpc.php 1 -
+/tmp/phpinfo.php 1 -
+/prod/.env 2 -
+/backups/.env 1 -
+/php.php 2 -
+/sparkpost/.env 1 -
+//wp/wp-includes/wlwmanifest.xml 1 -
+/admin/.env 2 -
+/current/phpinfo.php 1 -
+/.env.sample 2 -
+//web/wp-includes/wlwmanifest.xml 1 -
+END_SIDER_404
+
+# URL with 400 errors - Hits - Last URL referrer
+BEGIN_SIDER_400 0
+END_SIDER_400
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 58
+34.122.147.229 2 2 396 20260416015905
+143.244.47.83 2 2 1042 20260413082914
+51.44.11.143 2 2 1402 20260414045020
+205.169.39.105 2 2 917 20260423012734
+104.252.191.197 2 2 1438 20260413081605
+44.220.61.109 2 2 1402 20260403154745
+149.57.180.160 2 2 1580 20260428090255
+136.109.80.43 2 2 1598 20260416073911
+34.220.64.93 2 2 1506 20260413101443
+91.231.89.20 2 2 1702 20260413085410
+64.227.178.186 1 1 790 20260414232549
+23.27.145.145 1 1 790 20260401090331
+3.137.198.17 1 1 506 20260413081351
+152.42.128.62 1 1 790 20260416230611
+23.27.145.140 1 1 790 20260411090318
+205.169.39.22 1 1 198 20260416015401
+91.231.89.22 1 1 851 20260413084759
+23.27.145.2 1 1 790 20260408100253
+91.196.152.68 1 1 851 20260413084203
+23.27.145.186 1 1 790 20260420091319
+152.42.140.185 1 1 790 20260414061053
+13.212.32.14 1 1 506 20260413081352
+152.39.205.96 1 1 198 20260413081525
+68.183.147.224 1 1 790 20260416170655
+13.60.89.14 1 1 506 20260413081351
+23.178.112.107 1 1 517 20260413081351
+164.90.168.112 1 1 790 20260403105919
+199.45.155.107 1 1 790 20260420163832
+23.27.145.100 1 1 790 20260413090817
+23.27.145.193 1 1 790 20260404151321
+103.196.9.161 1 1 198 20260413081646
+91.231.89.23 1 1 851 20260413084124
+149.57.180.13 1 1 790 20260425151046
+164.90.222.128 1 1 790 20260428163312 20260428163312 /
+23.27.145.70 1 1 790 20260402100600
+91.196.152.231 1 1 851 20260413084859
+103.4.251.186 1 1 719 20260413081558
+103.4.251.13 2 2 1438 20260413083650
+104.164.173.133 2 2 1438 20260413092720
+149.57.180.6 1 1 790 20260412100047
+143.198.135.206 1 1 790 20260414175534
+35.166.175.44 1 1 506 20260413081352
+66.132.195.48 1 1 790 20260427225929
+104.164.173.229 1 1 719 20260413092713
+44.250.245.122 2 2 396 20260413103843
+23.27.145.239 1 1 790 20260408151005
+3.139.242.79 1 1 790 20260420181826
+23.27.145.27 1 1 790 20260417091016
+103.196.9.188 1 1 198 20260413081646
+205.169.39.18 1 1 790 20260428021329
+149.57.180.142 1 1 790 20260427091837
+35.204.143.52 1 1 790 20260412060825
+188.166.148.231 1 1 790 20260417171314
+3.18.186.238 2 2 1580 20260406083052
+103.4.251.221 1 1 719 20260413083648
+51.254.49.102 1 1 851 20260413103450
+149.57.180.42 1 1 790 20260423090802
+193.108.130.24 2 2 54 20260413081348
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 18
+20260401 1 1 790 1
+20260402 1 1 790 1
+20260403 3 3 2192 2
+20260404 1 1 790 1
+20260406 2 2 1580 1
+20260408 2 2 1580 2
+20260411 1 1 790 1
+20260412 2 2 1580 2
+20260413 33 33 19351 25
+20260414 5 5 3772 4
+20260415 1 1 790 1
+20260416 7 7 3772 5
+20260417 2 2 1580 2
+20260420 3 3 2370 3
+20260423 3 3 1707 2
+20260425 1 1 790 1
+20260427 2 2 1580 2
+20260428 3 3 2370 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 3
+5mn-15mn 2
+0s-30s 55
+30s-2mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 4
+/ 66 45579 53 52
+/.well-known/acme-challenge/uxsZWNi2ddzec21fJjpyZJuRpnx7filDuIXdjIS6U3s 5 2541 5 5
+/.well-known/acme-challenge/da-http-challenge-3998993743 1 28 1 0
+/.well-known/acme-challenge/da-http-challenge-54778124 1 26 0 1
+END_SIDER
+
+# Payload Range - Payload Frequency
+BEGIN_FILESIZE 4
+100-500 22
+0-44 2
+500-1K 80
+1K-2K 406
+END_FILESIZE
+
+# Request Time Range - Request Time Frequency
+BEGIN_REQUESTTIME 0
+END_REQUESTTIME
